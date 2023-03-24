@@ -7,6 +7,8 @@ function addCorsIfNeeded(response: Response) {
   if (!headers.has("access-control-allow-origin")) {
     headers.set("access-control-allow-origin", "*");
   }
+  
+  headers.set("origin", "https://www.volotv.com");
   return headers;
 }
 
