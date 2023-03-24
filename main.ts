@@ -5,10 +5,10 @@ function addCorsIfNeeded(response: Response) {
   const headers = new Headers(response.headers);
 
   if (!headers.has("access-control-allow-origin")) {
-    headers.set("access-control-allow-origin", "*");
+    headers.set("access-control-allow-origin", "https://www.volotv.com");
   }
   
-  headers.set("origin", "https://www.volotv.com");
+
   return headers;
 }
 
